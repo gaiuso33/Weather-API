@@ -26,7 +26,7 @@ This project uses **WeatherAPI.com** for weather data, and includes a **Node.js 
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - HTML
 - CSS
