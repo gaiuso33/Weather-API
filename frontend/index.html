@@ -11,18 +11,20 @@
     <h1>Weather App</h1>
 
     <form id="weatherForm">
-      <input 
-        type="text" 
-        id="locationInput" 
-        placeholder="Enter a city (e.g Lagos)" 
-        required 
-      />
+      <input type="text" id="locationInput" placeholder="Enter a city..." required />
       <button type="submit">Search</button>
     </form>
 
+    <div class="toggle-box hidden" id="toggleBox">
+      <button id="toggleUnit">Switch °C / °F</button>
+    </div>
+
     <div id="loading" class="hidden">Loading...</div>
 
-    <div id="weatherDisplay" class="weather-box"></div>
+    <div id="weatherDisplay" class="weather-box hidden"></div>
+
+    <h2 id="forecastTitle" class="hidden">3-Day Forecast</h2>
+    <div id="forecastDisplay" class="forecast-container hidden"></div>
   </div>
 
   <script src="script.js"></script>

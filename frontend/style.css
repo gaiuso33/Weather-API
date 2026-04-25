@@ -1,26 +1,25 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #74ebd5, #9face6);
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background 0.5s ease;
 }
 
 .container {
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   padding: 30px;
   border-radius: 15px;
-  width: 350px;
+  width: 400px;
   text-align: center;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
   margin-bottom: 20px;
-  font-size: 26px;
 }
 
 form {
@@ -31,7 +30,7 @@ form {
 
 input {
   padding: 10px;
-  width: 200px;
+  width: 220px;
   border-radius: 8px;
   border: 1px solid #ccc;
   outline: none;
@@ -56,11 +55,28 @@ button:hover {
   padding: 20px;
   border-radius: 12px;
   background: #f4f4f4;
-  display: none;
 }
 
 .weather-box img {
   width: 70px;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.forecast-day {
+  flex: 1;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.forecast-day img {
+  width: 50px;
 }
 
 .hidden {
@@ -70,5 +86,8 @@ button:hover {
 #loading {
   margin-top: 20px;
   font-weight: bold;
-  color: #333;
+}
+
+.toggle-box {
+  margin-top: 15px;
 }
